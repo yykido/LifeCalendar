@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+import TemporaryDrawer from './TemporaryDrawer';
 
 const DoB: React.FC = () => {
     const [dob, setDob] = useState<string>('');
@@ -15,6 +16,7 @@ const DoB: React.FC = () => {
     return (
         <div>
             <h1>Life Calendar</h1>
+            
             <div><span className="material-icons-outlined">account_circle</span></div>
             <div><Button variant="contained">Contained</Button></div>
             <div><IconButton aria-label="delete" size="large">
